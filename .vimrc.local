@@ -1,0 +1,4 @@
+colorscheme flattened_dark
+
+UnBundle 'klen/python-mode'
+
