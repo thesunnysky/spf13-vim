@@ -131,7 +131,8 @@ create_symlinks() {
         lnif "$source_path/.vimrc"     "$target_path/.config/nvim/init.vim"
     fi
 
-    touch  "$target_path/.vimrc.local"
+    #touch  "$target_path/.vimrc.local"
+    lnif "$source_path/.vimrc.local"           "$target_path/.vimrc.local"
 
     ret="$?"
     success "Setting up vim symlinks."
